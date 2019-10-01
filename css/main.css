@@ -1,4 +1,7 @@
-* { margin: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-size: 16px;
@@ -8,7 +11,7 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem  ;
+    font-size: 2.5rem;
     color: whitesmoke;
     padding: 1rem;
     font-family: 'Libre Baskerville', serif;
@@ -21,18 +24,23 @@ h2 {
     font-family: 'Libre Baskerville', serif;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 600px;
 }
 
-header, footer, footer a {
+header,
+footer,
+footer a {
     text-align: center;
     background-color: #19647E;
     color: whitesmoke;
     border-radius: 25px;
 }
+
 header img {
     width: 175px;
     height: auto;
@@ -45,5 +53,5 @@ footer {
 
 #yellow {
     color: yellow;
-    font-size: .75rem; 
+    font-size: .75rem;
 }
