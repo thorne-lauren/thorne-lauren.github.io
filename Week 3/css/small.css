@@ -3,6 +3,8 @@ footer {
     background-color: #19647E;
     color: white;
     text-align: center;
+    margin: auto;
+    padding: .5rem;
 }
 
 header {
@@ -11,14 +13,15 @@ header {
 
 header p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
+    margin: .5rem;
 }
 
 body {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
 }
 
 section {
@@ -30,31 +33,43 @@ section {
 
 h1 {
     line-height: 3rem;
-}
+   }
 
 h1,
 h2 {
     font-family: 'Libre Baskerville', serif;
+    margin: 0 auto;
 }
 
 h2 {
     background-color: #19647E;
     color: white;
     padding: .5rem;
-    margin-top: -.1rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    margin: 0;
 }
 
 section p,
 img {
     padding: .5rem;
-    margin: 0;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    height: auto;
+    margin: auto;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 360px;
+    padding: 0.5rem; 
+    max-width: 1080px;
     margin: auto;
 }
+
+footer a {
+    color: white;
+  }
