@@ -17,11 +17,16 @@
 
     #scenarios {
         clear: left;
-        margin-top: 6em;
+        margin-top: 3em;
     }
 
     h3 {
         clear: both;
         margin: 20px;
+    }
+
+    th,
+    td {
+        padding: 1rem .5rem;
     }
 }
