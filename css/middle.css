@@ -1,9 +1,7 @@
 @media only screen and (min-width: 32.5em) {
-    .persona {
-        float: left;
-        max-width: 100%;
-        margin-right: 30px;
-    }
+    img{
+        float: right;
+        }
 
     
 }
