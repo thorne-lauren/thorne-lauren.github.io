@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #DBB4C2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Delius Unicase', cursive;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+}
+
+.heading {
+    text-align: center;
+}
+
+.motto {
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+nav,
+footer {
+    background-color: #8E6775;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+nav li a,
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: white;
+}
+
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline overline;
+}
+
+#current {
+    text-decoration: underline;
+}
+
+#current:hover {
+    text-decoration: underline overline;
+}
+
+nav li {
+    display: flex;
+    font-size: 1.1em;
+    padding: .5em;
+    justify-content: space-around;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+main,
+footer {
+    max-width: 1080px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: .25em;
+    font-size: 1.75em;
+}
+
+.contentbox {
+    background-color: #DBB4C2;
+    border:1px solid #8E6775;
+    border-radius: .2em;
+    padding: .75em;
+    margin: .5em auto;
+}
+
+footer {
+    text-align: center;
+    padding: .5em;
+}
