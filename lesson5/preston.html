@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Delius+UnicaseQuicksand&display=swap" rel="stylesheet">
 </head>
 <body>
+    <aside id="banner">
+        Saturday = Preston Pancakes in the Park! 9:00a.m. Saturday at the city park pavilion.
+    </aside>
     <header>
         <img src="images/logo.png" alt="Logo - yellow sweater">
         <div class="heading">
@@ -54,21 +57,41 @@
             </li>
         </ul>
     </nav>
+
     <main>
         <h2>Preston Idaho</h2>
-        <div class="contentbox">
-            Hero with weather summary
-        </div>
-        <div class="contentbox">
+        <section id="hero" >
+            <img src="images/hero.jpg" alt="Aerial view of town">
+            <div id="weather-summary">
+                <h3>Weather Summary</h3>
+                <div id="category">
+                    <p>Currently:</p>
+                    <p>High:</p>
+                    <p>Wind Chill:</p>   
+                    <p>Humidity:</p> 
+                    <p>Wind Speed:</p>                
+                </div>
+                <div id="info">
+                    <p>Sunny</p>
+                    <p>76 &#8457;</p>
+                    <p> &#8457;</p>
+                    <p>69%</p>
+                    <p>5 mph</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="contentbox">
             5 Day Forecast
-        </div>
-        <div class="contentbox">
+        </section>
+        <section class="contentbox">
             Article
-        </div>
-        <div class="contentbox">
+        </section>
+        <section class="contentbox">
             Contact Information
-        </div>
+        </section>
     </main>
+
     <footer>
         <p>
             &copy; Sweater Weather | <a href="http://www.byui.edu/online">BYUI
@@ -78,5 +101,6 @@
     </footer>
     <script src="js/date.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/banner.js"></script>
 </body>
 </html>

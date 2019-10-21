@@ -3,6 +3,14 @@
     box-sizing: border-box;
 }
 
+#banner {
+    background-color: #f7f96A;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
 header {
     background-color: #DBB4C2;
     display: flex;
@@ -110,6 +118,46 @@ h2 {
     border-radius: .2em;
     padding: .75em;
     margin: .5em auto;
+}
+
+#hero img {
+    width: 100%;
+    margin: 0 auto;
+}
+#hero {
+    position: relative;
+}
+
+#weather-summary {
+    background-color: #8E6775;
+    color: white;
+    position: absolute;
+    padding: 0px 15px;
+    opacity: .9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px white;
+    top: 33px;
+    left: 25px;   
+}
+
+#weather-summary h3 {
+    text-align: left;
+    text-decoration: underline overline;
+    padding-top: 1em;
+}
+
+#category {
+    display: inline-block;
+    text-align: right;
+    padding:  .25em;
+    line-height: 1.5em;
+}
+
+#info {
+    display: inline-block;
+    padding:  .25em;
+    color:  #f7f96A;
+    line-height: 1.5em;
 }
 
 footer {
