@@ -10,7 +10,7 @@ body {
     line-height: 32px;
     font-family: 'Nanum Gothic', sans-serif;
     color: black;
-    
+
 }
 
 h1 {
@@ -55,7 +55,11 @@ footer {
     font-size: .85rem;
 }
 
-#yellow {
-    color: yellow;
-    font-size: .75rem;
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 1.5s;
 }
