@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Nanum+Gothic&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: black;
+    
+}
+
+h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 1rem;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header,
+main,
+footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 600px;
+}
+
+header,
+footer,
+footer a {
+    text-align: center;
+    background-color: #19647E;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+
+picture {
+    display: grid;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+footer {
+    font-size: .85rem;
+}
+
+#yellow {
+    color: yellow;
+    font-size: .75rem;
+}
