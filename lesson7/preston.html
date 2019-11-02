@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather site for Preston Idaho to know what kind of outerwear is needed depending on temperature">
+    <title>Sweater Weather | Preston, ID</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css"> 
+    <link href="css/small.css" rel="stylesheet" type="text/css"> 
+    <link href="css/medium.css" rel="stylesheet" type="text/css"> 
+    <link href="css/large.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+    <aside id="banner">
+        Saturday = Preston Pancakes in the Park! 9:00a.m. Saturday at the city park pavilion.
+    </aside>
+    <header>
+        <img src="images/logo.png" alt="Logo - yellow sweater">
+        <div class="heading">
+            <h1>Sweater Weather</h1>
+            <div class="motto">Being prepared is always in style</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onClick="toggleMenu()">&#9776;</a></li>
+            <li>
+                <a href="#">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="preston.html" id="current">
+                    Preston
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Soda Springs
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Fish Haven
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Storm Center
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html">
+                    Gallery
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <section id="hero" >
+            <!--<img src="images/hero.jpg" alt="Aerial view of town">-->
+            <picture>
+                
+                <img srcset="images/hero-small-550.jpg 550w,
+                            images/hero-med-830.jpg 830w,
+                            images/hero-large-1080.jpg 1080w" 
+                        sizes="(max-width: 550px) 550px, (max-width: 830px) 830px, 1080px"
+                    src="images/hero-small-550.jpg" alt="Sundrise over field">
+            </picture>
+            <div id="weather-summary">
+                <h3>Weather Summary</h3>
+                <div id="category">
+                    <p>Currently:</p>
+                    <p>High:</p>
+                    <p>Wind Chill:</p>   
+                    <p>Humidity:</p> 
+                    <p>Wind Speed:</p>                
+                </div>
+                <div id="info">
+                    <p><span id="currentTemp">70</span>&#8457; Sunny</p>
+                    <p>76 &#8457;</p>
+                    <p><span id="output"></span> &#8457;</p>
+                    <p>69%</p>
+                    <p><span id="windSpeed">5</span> mph</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="five-day-forcast">
+            <h3 id="forecast-title">5 Day Forecast</h3>
+            <div id="forecast-grid">
+               <div class="forecast-day">Wed</div>
+               <div class="forecast-day">Thu</div>
+               <div class="forecast-day">Fri</div>
+               <div class="forecast-day">Sat</div>
+               <div class="forecast-day">Sun</div>
+
+               <div class="forecast-icon"><img src="images/sun-icon.jpg" alt="sun icon"></div>
+               <div class="forecast-icon"><img src="images/sun-icon.jpg" alt="sun icon"></div>
+               <div class="forecast-icon"><img src="images/sun-icon.jpg" alt="sun icon"></div>
+               <div class="forecast-icon"><img src="images/sun-icon.jpg" alt="sun icon"></div>
+               <div class="forecast-icon"><img src="images/sun-icon.jpg" alt="sun icon"></div>
+
+               <div class="forecast-temp">89&#8457;</div>
+               <div class="forecast-temp">87&#8457;</div>
+               <div class="forecast-temp">78&#8457;</div>
+               <div class="forecast-temp">75&#8457;</div>
+               <div class="forecast-temp">72&#8457;</div>
+            </div>
+        </section>
+        <section class="contentbox" id="trend">
+            <img src="images/articleimage.jpg" alt="Girl with sunglasses">
+            <h3>Town Trends</h3>
+            <p class="author">by Rachel Amber</p>
+            <p class="article-content">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. <a href="#">Read more</a>
+
+            </p>
+        </section>
+        <section class="contentbox" id="contact-info">
+            <a href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0997416,-111.9153444,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173" id="map">
+                <img src="images/map.JPG" alt="Preston town map">
+            </a>
+            <div>
+                <h4>Sweater Weather</h4>
+                <p>30 N 1st E</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p>&#9742; 999.999.9999</p>
+                <p>&#9993;contact@sweaterweather.com</p>
+                <br>
+                <div class="socials">
+                    <a href="http://facebook.com">
+                        <img src="images/facebook-icon.png" alt="Facebook logo">
+                    </a>
+                    <a href="http://pintrest.com">
+                        <img src="images/pintrest-icon.png" alt="Pintrest logo">
+                    </a>
+                    <a href="http://twitter.com">
+                        <img src="images/twitter-icon.png" alt="Twitter logo">
+                    </a>
+                    <a href="http://whatsapp.com">
+                        <img src="images/whatsapp-icon.png" alt="Whatsapp logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; Sweater Weather | <a href="http://www.byui.edu/online">BYUI
+                Online Learning</a> | Lauren Thorne 
+        </p>
+       <div id="currentDate"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({ google: { families: ['Delius Unicase', 'Quicksand']}}); 
+    </script>
+    <script src="js/date.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+</html>
