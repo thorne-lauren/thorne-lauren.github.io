@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 body {
     font-family: Ubuntu, sans-serif;
     font-size: 25px;
@@ -7,30 +9,31 @@ body {
 table {
     border-spacing: 0px;
     border-collapse: collapse;
-    text-align: center; 
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-table, table caption {
     box-shadow: 10px 10px 15px #628ca2;
 }
 
-caption, th, td {
+th,
+td {
     border: 1px solid gray;
     padding: 10px;
 }
 
-caption, tfoot td {
+tfoot td,
+thead tr:first-child th {
     background-color: #7fb9c2;
 }
 
-caption {
+thead tr:first-child th {
     font-weight: bold;
     font-size: 1.5em;
+    color: black;
 }
 
-th, #highlight {
+th,
+#highlight {
     background-color: #628ca6;
     color: white;
 }
