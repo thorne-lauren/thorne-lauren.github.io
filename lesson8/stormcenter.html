@@ -87,7 +87,8 @@
                     </datalist>
                 </label>
                 
-                <label class="sbs" id="slider">Storm Severity (1-10) <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <label class="sbs" id="slider" for="rating">
+                    Storm Severity (1-10) <input type="range"name="rating" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span><br>
                 </label>
 
