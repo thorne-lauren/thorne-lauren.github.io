@@ -43,6 +43,7 @@
         grid-template-columns: 1fr 1fr;
         max-width: 960px;
         grid-template-areas: "a b";
+        align-items: center;
     }
 
     .information {
