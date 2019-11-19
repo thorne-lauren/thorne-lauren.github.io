@@ -1,4 +1,4 @@
-@media only screen and (min-width: 832px) {
+@media only screen and (min-width: 768px) {
     .navigation {
         display: flex;
     }
@@ -41,5 +41,19 @@
     /*home towns page styles below here*/
     .ourtowns > div {
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
     }
+
+    .information {
+        grid-area: a;
+    }
+
+    .ourtowns img {
+        grid-area: b;
+    }
+
+    .ourtowns > div:nth-child(2){
+        grid-template-areas: "b a";
+    }
+
 }
