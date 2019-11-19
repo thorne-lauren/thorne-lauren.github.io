@@ -353,14 +353,29 @@ form input.submitButton {
 
 
 /*Home page CSS below here*/
+
+.ourtowns {
+    margin: 0;
+    padding-top: 0;
+}
+
 .ourtowns > div {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-content: center;
+    background-color: #8e6775;
+    color: white;
+    text-align: center;
+    margin-top: 1em;
 }
 
 .ourtowns img {
-    max-width: 95%;
+    max-width: 100%;
+}
+
+.information {
+    padding: 1em 0;
+    line-height: 2.5em;
 }
