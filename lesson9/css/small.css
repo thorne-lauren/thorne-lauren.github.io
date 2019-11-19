@@ -351,3 +351,16 @@ form input.submitButton {
     margin: 1rem;
 }
 
+
+/*Home page CSS below here*/
+.ourtowns > div {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+}
+
+.ourtowns img {
+    max-width: 95%;
+}

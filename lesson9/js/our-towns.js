@@ -19,6 +19,7 @@ fetch(requestURL)
 
                 townname.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
+                motto.setAttribute("class", "motto");
                 yearfounded.textContent = "Year Founded: " + towns[i].yearFounded;
                 population.textContent = "Population: " + towns[i].currentPopulation;
                 annualrain.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
@@ -28,6 +29,7 @@ fetch(requestURL)
 
                 card.appendChild(townname);
                 card.appendChild(motto);
+                card.appendChild(yearfounded);
                 card.appendChild(population);
                 card.appendChild(annualrain);
                 card.appendChild(img);
