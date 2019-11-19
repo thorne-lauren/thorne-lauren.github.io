@@ -10,6 +10,7 @@ fetch(requestURL)
         for (let i = 0; i < towns.length; i++) {
             if (towns[i].name == 'Fish Haven' || towns[i].name == 'Preston' || towns[i].name == 'Soda Springs') {
                 let card = document.createElement('div');
+                let information = document.createElement('div');
                 let townname = document.createElement('h3');
                 let motto = document.createElement('div');
                 let yearfounded = document.createElement('p');
@@ -25,13 +26,15 @@ fetch(requestURL)
                 annualrain.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
                 img.setAttribute("src", "./images/" + towns[i].photo);
                 img.setAttribute("alt", "Photo of " + towns[i].name);
+                information.setAttribute("class", "information");
 
 
-                card.appendChild(townname);
-                card.appendChild(motto);
-                card.appendChild(yearfounded);
-                card.appendChild(population);
-                card.appendChild(annualrain);
+                card.appendChild(information);
+                information.appendChild(townname);
+                information.appendChild(motto);
+                information.appendChild(yearfounded);
+                information.appendChild(population);
+                information.appendChild(annualrain);
                 card.appendChild(img);
 
                 document.querySelector('section.ourtowns').appendChild(card);
