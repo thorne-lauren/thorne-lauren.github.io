@@ -108,7 +108,7 @@ nav li {
 /*main content*/
 main,
 footer {
-    max-width: 1080px;
+    max-width: 1440px;
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
     line-height: 1.5em;
@@ -357,10 +357,15 @@ form input.submitButton {
 .ourtowns {
     margin: 0;
     padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
 }
 
 .ourtowns > div {
     margin: 0 auto;
+    grid-template-columns: 1fr;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -376,6 +381,10 @@ form input.submitButton {
 }
 
 .information {
-    padding: 1em 0;
-    line-height: 2.5em;
+    padding: .75em;
+    line-height: 2em;
+}
+
+.ourtowns .motto {
+    color: #f7f96A;
 }

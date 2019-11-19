@@ -41,6 +41,7 @@
     /*home towns page styles below here*/
     .ourtowns > div {
         grid-template-columns: 1fr 1fr;
+        max-width: 960px;
         grid-template-areas: "a b";
     }
 

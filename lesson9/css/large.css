@@ -19,8 +19,13 @@
     }
 
     /*home towns page styles below here*/
-    .ourtowns > div {
+    .ourtowns {
         grid-template-columns: 1fr 1fr 1fr;
-        
+        grid-gap: .5em;
     }
+    
+    .ourtowns > div {
+        display: block;
+    }
+
 }
