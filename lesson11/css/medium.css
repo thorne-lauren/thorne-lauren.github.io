@@ -22,6 +22,13 @@
         display: block;
     }
 
+    /*weather summary is abolute*/
+    #weather-summary {
+        position: absolute;
+        top: 33px;
+        left: 25px;   
+    }
+
     /*see map and align*/
     #contact-info {
         justify-content: space-evenly;
