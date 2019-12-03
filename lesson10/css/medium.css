@@ -1,0 +1,61 @@
+@media only screen and (min-width: 768px) {
+    .navigation {
+        display: flex;
+    }
+
+    /*remove hamburger menu*/
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    h2 {
+        margin: .75em;
+    }
+
+    /*see forcast*/
+    #five-day-forcast {
+        display: block;
+    }
+
+    /*see map and align*/
+    #contact-info {
+        justify-content: space-evenly;
+    }
+
+    #map {
+        display: block;
+    }
+
+    /*gallery page stlyes*/
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+        max-width: 960px;
+        justify-content: center;   
+    }
+
+    /*home towns page styles below here*/
+    .ourtowns > div {
+        grid-template-columns: 1fr 1fr;
+        max-width: 960px;
+        grid-template-areas: "a b";
+        align-items: center;
+    }
+
+    .information {
+        grid-area: a;
+    }
+
+    .ourtowns img {
+        grid-area: b;
+    }
+
+    .ourtowns > div:nth-child(2){
+        grid-template-areas: "b a";
+    }
+
+}
