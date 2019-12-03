@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Weather site for Preston Idaho to know what kind of outerwear is needed depending on temperature">
+    <meta name="description"
+        content="Weather site for Preston Idaho to know what kind of outerwear is needed depending on temperature">
     <title>Sweater Weather | Preston, ID</title>
-    <link href="css/normalize.css" rel="stylesheet" type="text/css"> 
-    <link href="css/small.css" rel="stylesheet" type="text/css"> 
-    <link href="css/medium.css" rel="stylesheet" type="text/css"> 
-    <link href="css/large.css" rel="stylesheet" type="text/css"> 
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/small.css" rel="stylesheet" type="text/css">
+    <link href="css/medium.css" rel="stylesheet" type="text/css">
+    <link href="css/large.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <aside id="banner">
         Saturday = Preston Pancakes in the Park! 9:00a.m. Saturday at the city park pavilion.
@@ -58,10 +61,53 @@
     </nav>
 
     <main>
+        <section id="hero">
+            <picture>
+                <img srcset="images/home-small-550.jpg 550w,
+                            images/home-medium-830.jpg 830w,
+                            images/home-large-1080.jpg 1080w"
+                    sizes="(max-width: 550px) 550px, (max-width: 830px) 830px, 1080px" src="images/home-small-550.jpg"
+                    alt="Aerial view of town">
+            </picture>
+        </section>
+
+        <section class="contentbox">
+            <article>
+                <img src="images/home-article-image.jpg"
+                    alt="Dachund dog wearing a red sweater in from of Christmas tree">
+                <h3>Keep Your Fur Babies Warm</h3>
+                <p class="author">by Lauren Thorne</p>
+                <p class="article-content">
+                    Keeping warm is so important for everyone in the family as we are in the throws of these cold winter
+                    months. Sweaters indoors and outdoors become a fashionable and comfortable way to stay warm, but we
+                    shouldn’t forget our furry friends! A high collar or a turtle neck can make a big difference for our
+                    furry friends. If you have a cat, it is best to keep them indoors so that they don’t get lost or
+                    sick from being outside in the cold weather. For dogs, keep them on leashes and put some clothes on!
+                </p>
+                <p class="article-content">
+                    Most dogs are lost in the winter than any other season due to them losing their scent more easily in
+                    the cold. Make sure your animals are microchipping and wearing their ID tags in case they do end up
+                    getting lost.
+                </p>
+                <p class="article-content">
+
+                    Our doggies still need to go outside for walks and such, so you have to be smart about it when it
+                    gets so cold outside. If you bath your dog, be sure that they are completely dry before taking them
+                    out for a walk (this is good advice for us humans too. Frozen hair is never in style). After your
+                    walk be sure to wipe down your dog’s legs and paws to get rid of any harmful chemicals that are used
+                    to melt ice that they may have picked up.
+                </p>
+                <p class="article-content">
+                    Keep your furry friends warm!
+                </p>
+            </article>
+        </section>
+
         <h2>Our Towns</h2>
         <section class="ourtowns contentbox"></section>
         <section class="contentbox" id="contact-info">
-            <a href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0997416,-111.9153444,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173" id="map">
+            <a href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0997416,-111.9153444,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173"
+                id="map">
                 <img src="images/map.JPG" alt="Preston town map">
             </a>
             <div>
@@ -93,9 +139,9 @@
     <footer>
         <p>
             &copy; Sweater Weather | <a href="http://www.byui.edu/online">BYUI
-                Online Learning</a> | Lauren Thorne 
+                Online Learning</a> | Lauren Thorne
         </p>
-       <div id="currentDate"></div>
+        <div id="currentDate"></div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>
@@ -104,4 +150,5 @@
     <script src="js/menu.js"></script>
     <script src="js/banner.js"></script>
 </body>
+
 </html>
