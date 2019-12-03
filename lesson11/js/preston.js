@@ -1,22 +1,15 @@
 const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=8af58a06e9106579cf73a2cbb2b72752';
-const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=8af58a06e9106579cf73a2cbb2b72752'
 
 fetch(weatherURL)
     .then((response) => response.json())
     .then((jsWeatherObject) => {
         console.log(jsWeatherObject);
 
-        //const imagesrc = 'https://openweathermap.org/img/w/' + jsWeatherObject.weather[0].icon + '.png';
-        //const desc = jsWeatherObject.weather[0].description;
-
         document.getElementById('currentTemp').textContent = jsWeatherObject.main.temp;
         document.getElementById('currentDescription').textContent = jsWeatherObject.weather[0].description;
         document.getElementById('high').textContent = jsWeatherObject.main.temp_max;
         document.getElementById('humidity').textContent = jsWeatherObject.main.humidity;
         document.getElementById('windSpeed').textContent = jsWeatherObject.wind.speed;
-        //document.getElementById('imagesrc').textContent = imagesrc;
-        //document.getElementById('icon').setAttribute('src', imagesrc);
-        //document.getElementById('icon').setAttribute('alt', desc);
 
         var t = parseInt(document.getElementById("currentTemp").textContent);
 
@@ -31,6 +24,8 @@ fetch(weatherURL)
         document.getElementById("output").innerHTML = chill;
 
     });
+
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=8af58a06e9106579cf73a2cbb2b72752';
 
 fetch(forecastURL)
     .then((response) => response.json())
@@ -63,13 +58,29 @@ fetch(forecastURL)
            } 
            
         }
-
-
-
-        
-
        
-        
+    });
 
-        
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+    .then(function (response){
+        return response.json();
+    })
+    .then(function (jsonObject){
+        console.table(jsonObject);
+        const towns = jsonObject['towns'];
+        const preston = towns[4];
+
+        let ul = document.createElement('ul');
+
+        for (let i=0; i < preston.events.length; i++){
+            let li = document.createElement('li');
+            li.textContent = preston.events[i];
+            ul.appendChild(li);
+        }      
+
+        document.querySelector('#events').appendChild(ul);
+
+
     });
