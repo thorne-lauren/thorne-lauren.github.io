@@ -8,6 +8,7 @@
 
 body {
     font-family: 'lato', sans-serif;
+    background-color: #f8fffc;
 }
 
 h1,
@@ -101,6 +102,15 @@ a:active {
 }
 
 /*Header*/
+aside {
+    text-align: center;
+    background-color: #918887;
+    padding: 20px;
+    font-size: 1.25em;
+    margin-bottom: -25px;
+    color: #f8fffc;
+}
+
 #logo {
     max-width: 200px;
     position: relative;
@@ -111,6 +121,11 @@ a:active {
     border: 2px #f8fffc ;
 }
 
+.hero {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .navigation li:first-child {
     display: block;
 }
@@ -118,7 +133,7 @@ a:active {
 nav,
 footer {
     background-color: #121e0a;
-    color: white;
+    color: #f8fffc;
 }
 
 nav {
@@ -133,18 +148,18 @@ nav ul {
 
 nav li a,
 footer a {
-    color: white;
+    color: #f8fffc);
     text-decoration: none;
     line-height: 60px;
 }
 
 nav a:link {
-    color: white;
+    color: #f8fffc;
 }
 
 
 nav a:visited {
-    color: white;
+    color: #f8fffc;
 }
 
 nav a:hover {
@@ -206,41 +221,6 @@ nav ul ul li {
     right: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*homepage*/
-
-aside {
-    text-align: center;
-    background-color: #918887;
-    padding: 20px;
-    font-size: 1.25em;
-    margin-bottom: -25px;
-    color: #f8fffc;
-}
-
-.hero {
-    width: 100%;
-    margin: 0 auto;
-}
-
 /*footer*/
 
 footer {
@@ -277,3 +257,54 @@ footer a:active {
     color: #f8fffc;
 }
 
+/*Homepage*/
+#callToAction {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#callToAction h1 {
+    font-size: 4em;
+    margin: 100px auto 0px;
+}
+
+#callToAction p,
+#callToAction div {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#button {
+    background-color: #121e0a;
+    color: #f8fffc;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+.homeContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-areas: "a b";
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+.homeContent div {
+    grid-area: b;
+    margin: 2em;
+    padding: 2em;
+}
+
+.homeContent img {
+    grid-area: a;
+    max-width: 100%;
+    margin: 2em;
+    padding: 2em;
+}
+
+.homeContent h2 {
+    font-size: 2.5em;
+    padding: 15px 0;;
+}
