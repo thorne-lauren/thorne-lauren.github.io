@@ -228,6 +228,7 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    clear: both;
 }
 
 footer ul {
@@ -264,14 +265,15 @@ footer a:active {
 }
 
 #callToAction h1 {
-    font-size: 4em;
-    margin: 100px auto 0px;
+    font-size: 2.5em;
+    margin: 75px auto 0px;
 }
 
 #callToAction p,
 #callToAction div {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
+    padding: .25em;
 }
 
 #button {
@@ -285,7 +287,8 @@ footer a:active {
 .homeContent img {
     max-width: 100%;
     margin: 0 auto;
-    padding: 2em;
+    float: right;
+    padding: 1em 0;
 }
 
 .homeContent h2 {
