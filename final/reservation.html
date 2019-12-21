@@ -39,7 +39,40 @@
         <img class="hero" src="images/reservations-hero.jpg" alt="Hotel Lobby">
     </header>
     <main>
-        
+        <form method="get">
+            <fieldset>
+                <legend>Room Information</legend>
+                <label>Select Location <input type="text" name="location" list="locationList" required>
+                    <datalist id="locationList">
+                        <option>Seattle, Washington</option>
+                        <option>Los Angeles, California</option>
+                        <option>Atlanta, Georgia</option>
+                        <option>Boston, Massachusetts</option>
+                    </datalist>
+                </label>
+                <label>Check-In Date <input type="date" name="inDate" required></label>
+                <label>Check-Out Date <input type="date" name="outDate" required></label>
+                <label >Number of Rooms<input type="number" name="rooms" required></label>  
+                <label>Room Type <input type="text" name="roomType" list="roomList" required>
+                    <datalist id="roomList">
+                        <option>Basic</option>
+                        <option>Wedding Party</option>
+                        <option>Wedding Guest</option>
+                        <option>Full Time Missionary</option>
+                        <option>Family History</option>
+                    </datalist>
+                </label>
+                <label>Comments or Accomodation Request<textarea name="comment" rows="10" cols="50"></textarea> </label>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Full Name <input type="text" name="fname" required pattern="[A-Z a-z]{5,}"></label>
+                <label>Email <input type="email" name="email" placeholder="name@email.com" required></label>
+                <label>Phone Number<input type="tel" name="phone" required></label>
+                <label>State/Country<input type="text" name="stateCountry" required></label>     
+            </fieldset>
+            <input type="submit" value="Request Reservation" class="submitButton">
+        </form>
     </main>
     <footer>
         <ul>
