@@ -28,4 +28,9 @@
         padding: 0 0 2em 2em;
     }
 
+    /*dropdown*/
+    nav ul ul li {
+        right: 100%;
+    }
+
 }

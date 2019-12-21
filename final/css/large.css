@@ -9,5 +9,8 @@
         font-size: 2em;
     }
 
+    nav ul ul li {
+        right:70%
+    }
     
 }
