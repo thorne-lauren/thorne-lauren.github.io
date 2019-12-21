@@ -20,6 +20,7 @@ h6 {
     font-family: 'Cinzel', serif;
     font-size: 2.5em;
     font-weight: bolder;
+    color: #5e6d27;
 }
 
 p {
@@ -34,42 +35,25 @@ main {
     padding: 0 1.5em;
 }
 
-/* True for all headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #5e6d27;
+section {
+    padding-bottom: 8em;
 }
 
 
 /* Style for individual headings */
 h1 {
-    font-size: 4em;
+    font-size: 2.5em;
     margin: 0.67em 0;
+    text-align: center;
 }
 
 h2 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 1.5em;
-    padding-top: .50em; 
-}
-
-h4 {
     font-size: 2em;
 }
 
-h5 {
-    font-size: 1.75em;
-}
-
-h6 {
-    font-size: 1.5em;
+h3 {
+    font-size: 1em;
+    padding-top: .50em; 
 }
 
 /* List Styles */
@@ -86,7 +70,7 @@ ol li {
 /* Non-Navigational Link Styles */
 a:link {
     color: #121e0a;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
@@ -155,6 +139,7 @@ footer a {
 
 nav a:link {
     color: #f8fffc;
+    text-decoration: none;
 }
 
 
@@ -218,7 +203,9 @@ nav ul ul li {
 	display:list-item;
     position: relative;
     background-color: #121e0a;
-    right: 70%;
+    right: 120%;
+    font-size: 1em;
+
 }
 
 /*footer*/
@@ -294,4 +281,21 @@ footer a:active {
 .homeContent h2 {
     font-size: 2.5em;
     padding: 15px 0;
+}
+
+/*Temples Page*/
+.degrees::after {
+    content: "\2109";
+}
+
+.degrees {
+    text-transform: capitalize;
+}
+
+.templePic {
+    max-width: 100%;
+    margin: 1em auto;
+    float: right;
+    padding:  0;
+    border: 18px solid #918887;
 }
