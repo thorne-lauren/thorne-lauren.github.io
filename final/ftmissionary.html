@@ -19,13 +19,14 @@
             <img id="logo" src="images/logo.jpg" alt="Temple Inn and Suites logo">
         </a>
         <nav>
-            <ul>
+            <ul class="navigation">
+                <li><a href="#" onClick="toggleMenu()">&#9776;</a></li>
                 <li><a href="temple.html">Temple</a></li>
                 <li><a href="reservation.html">Reservations</a></li>
                 <li><a href="services.html">Services</a>
                     <ul>
                         <li><a href="reception.html">Wedding Reception</a></li>
-                        <li><a href="ftmissionary.html">Full-Time Missionary</a></li>
+                        <li><a href="ftmissionary.html" id="current">Full-Time Missionary</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -44,6 +45,7 @@
 
     </footer>
 
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
