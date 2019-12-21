@@ -351,3 +351,34 @@ label textarea{
     max-width: 20rem;
     display: block;
 }
+
+/*Reception Page*/
+.flexPics {
+    max-width: 1720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+figure {
+    display: inline-block; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+figure img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+figcaption {
+    max-width: 600px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: .5em;
+    margin: 0 auto;
+}
